@@ -32,11 +32,13 @@ const firebaseConfig = {
     // Signed in
     var user = userCredential.user;
     console.log("it worked");
+    window.alert("Login Successful");
   })
   .catch((error) => {
     var errorCode = error.code;
     var errorMessage = error.message;
     console.log("Login Failed");
+    window.alert("Login Failed");
   });
   
     // Clear form
